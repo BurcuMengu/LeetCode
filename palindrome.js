@@ -16,3 +16,19 @@ var isPalindrome = function(x) {
 };
 
 isPalindrome(121);
+
+/**
+ * @param {number} x
+ * @return {boolean}
+ */
+var isPalindrome = function(x) {
+
+    
+    if (x < 0) return false;
+    
+    var str = x.toString();
+    var reverse = str.split('').reverse('').join('');
+
+    return str === reverse;
+
+};
